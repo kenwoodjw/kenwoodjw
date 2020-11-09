@@ -11,5 +11,5 @@
 <hr>
 
 <p align="center">
-<a href="https://github.com/mokeyjay"><img src="https://github-readme-stats.vercel.app/api?username=hjlarry&text_color=718096&bg_color=ffffff&hide_title=true&show_icons=true" style="width: 58%; max-width: 58%; min-width: 58%;"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hjlarry&layout=compact&hide=java&hide_title=true" style="width: 40%; max-width: 40%; min-width: 40%;"></a>
+<a href="https://github.com/mokeyjay"><img src="https://github-readme-stats.vercel.app/api?username=hjlarry&text_color=718096&bg_color=ffffff&hide_title=true&show_icons=true" style="width: 58%; max-width: 58%; min-width: 58%;"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hjlarry&layout=compact&hide=java&theme=default" style="width: 40%; max-width: 40%; min-width: 40%;"></a>
 </p>
