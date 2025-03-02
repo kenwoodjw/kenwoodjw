@@ -4,11 +4,11 @@ import re
 
 def update_readme_with_pr_stats():
     g = Github(os.getenv('GITHUB_TOKEN'))
-    
     user = g.get_user()
     
     pr_stats = {}
-    for repo in g.search_repositories(''): 
+    query = f"involves:{user.login}"
+    for repo in g.search_repositories(query):
         try:
             prs = repo.get_pulls(state='all', creator=user.login)
             if prs.totalCount > 0:
