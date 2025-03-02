@@ -7,13 +7,14 @@ def update_readme_with_pr_stats():
     user = g.get_user()
     
     pr_stats = {}
-    for repo in user.get_repos():
-        try:
-            prs = repo.get_pulls(state='all', creator=user.login)
-            if prs.totalCount > 0:
-                pr_stats[repo.full_name] = prs.totalCount
-        except Exception as e:
-            continue
+    # search for PRs authored by the current user(excluding self)
+    query = f"is:pr author:{user.login} -user:{user.login}"
+    
+    prs = g.search_issues(query)
+    
+    for pr in prs:
+        repo_name = pr.repository.full_name
+        pr_stats[repo_name] = pr_stats.get(repo_name, 0) + 1
     
     sorted_stats = dict(sorted(pr_stats.items(), key=lambda x: x[1], reverse=True))
     
