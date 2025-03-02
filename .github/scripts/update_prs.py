@@ -28,10 +28,11 @@ def update_readme_with_pr_stats():
     
     pr_table = "## 🌟 Top 10 Most Popular Repos I've Contributed To\n\n"
     pr_table += "| Repository | Stars | PR Count | Last PR |\n"
-    pr_table += "|------------|---------------|-------|---------|\n"
+    pr_table += "|-----|:---:|:---:|:---:|\n"
     
     for repo, stats in list(sorted_stats.items())[1:11]:
-        pr_table += f"| [{repo}](https://github.com/{repo}) | {stats['stars']} | {stats['count']} | {stats['last_pr_date'].strftime('%Y-%m-%d')} |\n"
+        repo_display = repo[:20] + '...' if len(repo) > 20 else repo
+        pr_table += f"| [{repo_display}](https://github.com/{repo}) | {stats['stars']} | {stats['count']} | {stats['last_pr_date'].strftime('%Y-%m-%d')} |\n"
     
 
     with open('README.md', 'r', encoding='utf-8') as f:
