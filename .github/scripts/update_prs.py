@@ -7,8 +7,7 @@ def update_readme_with_pr_stats():
     user = g.get_user()
     
     pr_stats = {}
-    query = f"involves:{user.login}"
-    for repo in g.search_repositories(query):
+    for repo in user.get_repos():
         try:
             prs = repo.get_pulls(state='all', creator=user.login)
             if prs.totalCount > 0:
