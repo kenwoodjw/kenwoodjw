@@ -5,6 +5,9 @@ import re
 def update_readme_with_pr_stats():
     g = Github(os.getenv('GITHUB_TOKEN'))
     user = g.get_user()
+
+    query = f"is:pr author:{user.login} -user:{user.login}"
+    prs = g.search_issues(query)
     
     pr_stats = {}
     for pr in prs:
