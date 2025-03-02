@@ -1,5 +1,5 @@
 ## 💫About Me 
-👯 Seeking remote project opportunities
+👯 Seeking remote project opportunities   
 🌱 Experienced product manager
 
 ## 💻Interested
