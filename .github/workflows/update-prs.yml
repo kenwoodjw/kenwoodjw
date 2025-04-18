@@ -1,39 +1,35 @@
-name: Update PR Stats
-
+name: Update README
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch:
-
+permissions:
+  contents: write
 jobs:
-  update-pr-stats:
+  update-readme:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: read
-    
+    name: Update README
     steps:
       - uses: actions/checkout@v3
-      
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Download github-contrib-stats
+        uses: robinraju/release-downloader@v1.8
         with:
-          python-version: '3.x'
-          
-      - name: Install dependencies
-        run: pip install requests PyGithub
-        
-      - name: Update PR stats
+          repository: j178/github-contrib-stats
+          latest: true
+          fileName: "github-contrib-stats*.tar.gz"
+          extract: true
+      - name: Update stats
+        run: ./github-contrib-stats -u ${{ github.repository_owner }} --update README.md
         env:
-          GITHUB_TOKEN: ${{ secrets.PR_STATS_TOKEN }}
-          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit files
         run: |
-          python .github/scripts/update_prs.py
-          
-      - name: Commit and push if changed
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet; then
+            echo "nothing new"
+            exit 0
+          fi
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update PR stats"
+          git commit -m "Update README"
           git push
