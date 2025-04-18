@@ -21,7 +21,7 @@ jobs:
       - name: Update stats
         run: ./github-contrib-stats -u ${{ github.repository_owner }} --update README.md
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PR_STATS_TOKEN }}
       - name: Commit files
         run: |
           if git diff --quiet; then
