@@ -12,6 +12,8 @@
 ![LLM](https://img.shields.io/badge/LLM-%23412991.svg?style=for-the-badge&logo=openai&logoColor=white)
 
 
+<!-- BEGIN:contributed -->
+<!-- END:contributed -->
 <!-- BEGIN:created_repos -->
 ...（这里通常是自动生成的内容）...
 <!-- END:created_repos -->
