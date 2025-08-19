@@ -53,10 +53,10 @@
 
 | Repository | Stars | PR Count | Last PR |
 |-----|:---:|:---:|:---:|
-| [astral-sh/uv](https://github.com/astral-sh/uv) | 65052 | 1 | 2025-03-22 |
-| [easzlab/kubeasz](https://github.com/easzlab/kubeasz) | 11059 | 2 | 2021-10-09 |
-| [apache/opendal](https://github.com/apache/opendal) | 4363 | 1 | 2025-08-11 |
-| [yihong0618/running_p...](https://github.com/yihong0618/running_page) | 4174 | 2 | 2022-06-12 |
+| [astral-sh/uv](https://github.com/astral-sh/uv) | 65154 | 1 | 2025-03-22 |
+| [easzlab/kubeasz](https://github.com/easzlab/kubeasz) | 11062 | 2 | 2021-10-09 |
+| [apache/opendal](https://github.com/apache/opendal) | 4364 | 1 | 2025-08-11 |
+| [yihong0618/running_p...](https://github.com/yihong0618/running_page) | 4175 | 2 | 2022-06-12 |
 | [tensorchord/envd](https://github.com/tensorchord/envd) | 2132 | 3 | 2022-06-20 |
 | [yihong0618/tg_bot_co...](https://github.com/yihong0618/tg_bot_collections) | 575 | 2 | 2024-03-17 |
 | [langgenius/dify-docs...](https://github.com/langgenius/dify-docs-archived) | 532 | 1 | 2024-11-27 |
