@@ -53,14 +53,14 @@
 
 | Repository | Stars | PR Count | Last PR |
 |-----|:---:|:---:|:---:|
-| [astral-sh/uv](https://github.com/astral-sh/uv) | 65252 | 1 | 2025-03-22 |
-| [easzlab/kubeasz](https://github.com/easzlab/kubeasz) | 11066 | 2 | 2021-10-09 |
-| [apache/opendal](https://github.com/apache/opendal) | 4367 | 1 | 2025-08-11 |
-| [yihong0618/running_p...](https://github.com/yihong0618/running_page) | 4176 | 2 | 2022-06-12 |
-| [tensorchord/envd](https://github.com/tensorchord/envd) | 2132 | 3 | 2022-06-20 |
+| [astral-sh/uv](https://github.com/astral-sh/uv) | 65363 | 1 | 2025-03-22 |
+| [easzlab/kubeasz](https://github.com/easzlab/kubeasz) | 11067 | 2 | 2021-10-09 |
+| [apache/opendal](https://github.com/apache/opendal) | 4370 | 1 | 2025-08-11 |
+| [yihong0618/running_p...](https://github.com/yihong0618/running_page) | 4177 | 2 | 2022-06-12 |
+| [tensorchord/envd](https://github.com/tensorchord/envd) | 2133 | 3 | 2022-06-20 |
 | [yihong0618/tg_bot_co...](https://github.com/yihong0618/tg_bot_collections) | 575 | 2 | 2024-03-17 |
 | [langgenius/dify-docs...](https://github.com/langgenius/dify-docs-archived) | 532 | 1 | 2024-11-27 |
-| [BorisPolonsky/dify-h...](https://github.com/BorisPolonsky/dify-helm) | 481 | 1 | 2025-07-17 |
-| [langgenius/dify-plug...](https://github.com/langgenius/dify-plugins) | 310 | 1 | 2025-05-02 |
+| [BorisPolonsky/dify-h...](https://github.com/BorisPolonsky/dify-helm) | 483 | 1 | 2025-07-17 |
+| [langgenius/dify-plug...](https://github.com/langgenius/dify-plugins) | 311 | 1 | 2025-05-02 |
 | [Winson-030/dify-kube...](https://github.com/Winson-030/dify-kubernetes) | 303 | 1 | 2024-09-03 |
 
