@@ -53,7 +53,7 @@
 
 | Repository | Stars | PR Count | Last PR |
 |-----|:---:|:---:|:---:|
-| [astral-sh/uv](https://github.com/astral-sh/uv) | 65645 | 1 | 2025-03-22 |
+| [astral-sh/uv](https://github.com/astral-sh/uv) | 65713 | 1 | 2025-03-22 |
 | [easzlab/kubeasz](https://github.com/easzlab/kubeasz) | 11071 | 2 | 2021-10-09 |
 | [apache/opendal](https://github.com/apache/opendal) | 4380 | 1 | 2025-08-11 |
 | [yihong0618/running_p...](https://github.com/yihong0618/running_page) | 4178 | 2 | 2022-06-12 |
